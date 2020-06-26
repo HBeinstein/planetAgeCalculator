@@ -8,4 +8,8 @@ export class User {
   findAgeMars() {
     return Math.round((this.ageInEarthDays / 687) * 10) / 10;
   }
+
+  findAgeVenus() {
+  
+  }
 };
