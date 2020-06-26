@@ -38,7 +38,7 @@ export class User {
   }
 
   howLongTilDeathEarthYears(ageOnPlanet) {
-    return this.lifeExpectancyInYears - ageOnPlanet;
+ 
   }
 
   howLongTilDeathPlanetYears(planet, ageOnPlanet) {
