@@ -39,4 +39,8 @@ describe('user planet ages', () => {
     expect(appUser.findAgeUranus()).toEqual(.3);
   });
 
+  test('should correctly calculate age of user on Neptune', () => {
+    expect(appUser.findAgeNeptune()).toEqual(.2);
+  });
+
 });

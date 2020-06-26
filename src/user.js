@@ -28,4 +28,8 @@ export class User {
   findAgeUranus() {
     return Math.round((this.ageInEarthDays / 30687) * 10) / 10;
   }
+
+  findAgeNeptune() {
+   
+  }
 };
