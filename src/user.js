@@ -1,4 +1,4 @@
-import { planetsDaysInYear } from './../src/main.js';
+import { planetsDaysInYear } from './../src/planets.js';
 
 export class User {
   constructor(name, dateOfBirth, ageInEarthDays) {
@@ -56,5 +56,8 @@ export class User {
       console.log('error');
     }
   }
-};
 
+  createWebpageInfo(name, planet, age, yearMeasurement) {
+  
+  };
+};

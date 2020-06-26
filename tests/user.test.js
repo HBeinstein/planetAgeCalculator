@@ -1,7 +1,7 @@
 
 import { User } from './../src/user.js';
 
-describe('user planet ages', () => {
+describe('user planet ages and lifespan info', () => {
   let appUser;
   let olderAppUser;
 
@@ -59,6 +59,10 @@ describe('user planet ages', () => {
 
   test("should correctly calculate how far over life expectancy a user is using a specific planet's years if user is 80 earth years or older", () => {
     expect(olderAppUser.howLongTilDeathPlanetYears('jupiter', olderAppUser.findAgeJupiter())).toEqual(.9);
+  });
+
+  test("should correctly concatenate user info using template literal to append to DOM", () => {
+    expect(appUser.createWebpageInfo(appUser.name, 'jupiter', appUser.findAgeJupiter(), appUser.howLongTilDeathEarthYears(appUser.findAgeJupiter()))).toEqual("Hi Hannah, your age on jupiter is 2.3! You'll likely live 77.7 more years on this planet.");
   });
 
 });
