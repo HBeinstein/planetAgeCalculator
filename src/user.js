@@ -14,6 +14,6 @@ export class User {
   }
 
   findAgeMercury() {
- 
+    return Math.round((this.ageInEarthDays / 88) * 10) / 10;
   }
 };
