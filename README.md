@@ -27,16 +27,13 @@ _The chart below shows all possible input behaviors and their expected outputs._
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
-| User enters no info in either input | "", "" | "Please enter a valid age and choose a planet!" | 
-| User enters info in planet input but no info in age input | "", "mars" | "Please enter a valid age!" | 
-| User enters info in age input but no info in planet input | "30", "" | "Please choose a valid planet!" | 
-| User enters their birthday and selects mercury | [10, 21, 1992], "mercury" | "You are 114.9 years old on Mercury and will live for approx. " | 
-| User enters their birthday and selects venus | [10, 21, 1992], "venus" | "You are 44.9 years old on Venus!" | 
-| User enters their birthday and selects mars | [10, 21, 1992], "mars" | "You are 14.7 years old on Mars!" | 
-| User enters their birthday and selects jupiter | [10, 21, 1992], "jupiter" | "You are 2.3 years old on Jupiter!" | 
-| User enters their birthday and selects neptune | [10, 21, 1992], "neptune" | "You are .2 years old on Venus!" | 
-| User enters their birthday and selects uranus | [10, 21, 1992], "uranus" | "You are .3 years old on Mars!" | 
-| User enters their birthday and selects saturn | [10, 21, 1992], "saturn" | "You are .9 years old on Jupiter!" | 
+| User enters their birthday and selects mercury | [10, 21, 1992], "mercury" | "You are 114.9 years old on Mercury and will live approx 216.9 more Mercury years!" | 
+| User enters their birthday and selects venus | [10, 21, 1992], "venus" | "You are 44.9 years old on Venus and will live approx 84.9 more Venus years!" | 
+| User enters their birthday and selects mars | [10, 21, 1992], "mars" | "You are 14.7 years old on Mars and will live approx 27.8 more Mercury years!" | 
+| User enters their birthday and selects jupiter | [10, 21, 1992], "jupiter" | "You are 2.3 years old on Jupiter and will live approx 4.4 more Mercury years!" | 
+| User enters their birthday and selects neptune | [10, 21, 1992], "neptune" | "You are .2 years old on Venus and will live approx .3 more Mercury years!" | 
+| User enters their birthday and selects uranus | [10, 21, 1992], "uranus" | "You are .3 years old on Mars and will live approx .7 more Mercury years!" | 
+| User enters their birthday and selects saturn | [10, 21, 1992], "saturn" | "You are .9 years old on Jupiter and will live approx 1.8 more Mercury years!" | 
 
 ## Known Bugs
 
