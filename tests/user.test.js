@@ -57,8 +57,8 @@ describe('user planet ages', () => {
     expect(olderAppUser.howLongTilDeathEarthYears(olderAppUser.findAgeJupiter())).toEqual(82.1);
   });
 
-  // test("should correctly calculate how far over life expectancy a user is using a specific planet's years if user is 80 earth years or older", () => {
-  //   expect(appUser.howLongTilDeathPlanetYears('jupiter', appUser.findAgeJupiter())).toEqual(4.4);
-  // });
+  test("should correctly calculate how far over life expectancy a user is using a specific planet's years if user is 80 earth years or older", () => {
+    expect(olderAppUser.howLongTilDeathPlanetYears('jupiter', olderAppUser.findAgeJupiter())).toEqual(.9);
+  });
 
 });
