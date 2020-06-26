@@ -27,14 +27,13 @@ _The chart below shows all possible input behaviors and their expected outputs._
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
-| User enters no information in age input | "" | "Please enter a valid age!" | 
-| User enters no information in planet input | "" | "Please choose a valid planet!" | 
-| User selects no toppings and a medium pizza | toppings: none, size: medium | "Your total is $12"  | 
-| User selects no toppings and a large pizza | toppings: none, size: large | "Your total is $14"  | 
-| User adds one topping | toppings: 1, size: small | "Your total is $13"  | 
-| User adds two toppings | toppings: 2, size: small | "Your total is $14"  | 
-| User adds three toppings | toppings: 3, size: small | "Your total is $15"  | 
-| User adds four toppings | toppings: 4, size: small | "Your total is $16"  | 
+| User enters no info in either input | "", "" | "Please enter a valid age and choose a planet!" | 
+| User enters info in planet input but no info in age input | "", "mars" | "Please enter a valid age!" | 
+| User enters info in age input but no info in planet input | "30","" | "Please choose a valid planet!" | 
+| User enters their age and selects mercury | "30", "mercury" | "You are 125 years old on Mercury!" | 
+| User enters their age and selects venus | "30", "venus" | "You are 48.39 years old on Venus!" | 
+| User enters their age and selects mars | "30", "mars" | "You are 125 years old on Mars!" | 
+| User enters their age and selects jupiter | "30", "jupiter" | "You are 125 years old on Jupiter!" | 
 
 ## Known Bugs
 
