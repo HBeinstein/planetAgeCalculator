@@ -38,7 +38,13 @@ export class User {
   }
 
   howLongTilDeathEarthYears(ageOnPlanet) {
- 
+    if (this.ageInEarthDays < 29200) {
+      return this.lifeExpectancyInYears - ageOnPlanet;
+    } else if (this.ageInEarthDays >= 29200) {
+      return Math.round(((this.ageInEarthDays / 365) - ageOnPlanet) * 10) / 10;
+    } else {
+      console.log('error');
+    }
   }
 
   howLongTilDeathPlanetYears(planet, ageOnPlanet) {
