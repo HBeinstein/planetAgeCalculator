@@ -30,6 +30,6 @@ export class User {
   }
 
   findAgeNeptune() {
-   
+    return Math.round((this.ageInEarthDays / 60190) * 10) / 10;
   }
 };
