@@ -36,6 +36,6 @@ export class User {
   }
 
   howLongTilDeath(planet) {
-    // return 80 - planet;
+    return 80 - planet;
   }
 };
