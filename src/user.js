@@ -10,6 +10,6 @@ export class User {
   }
 
   findAgeVenus() {
-  
+    return Math.round((this.ageInEarthDays / 225) * 10) / 10;
   }
 };
