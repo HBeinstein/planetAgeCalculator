@@ -20,4 +20,8 @@ export class User {
   findAgeJupiter() {
     return Math.round((this.ageInEarthDays / 4333) * 10) / 10;
   }
+
+  findAgeSaturn() {
+   
+  }
 };
