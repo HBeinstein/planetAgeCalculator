@@ -5,7 +5,7 @@ export class User {
     this.ageInEarthDays = ageInEarthDays
   }
 
-  checkAgeMars() {
-
+  findAgeMars() {
+    return this.ageInEarthDays / 687;
   }
 };

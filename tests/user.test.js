@@ -14,4 +14,8 @@ describe('user planet ages', () => {
     expect(appUser.ageInEarthDays).toEqual(10,110);
   });
 
+  test('should correctly calculate age of user on Mars', () => {
+    expect(appUser.findAgeMars).toEqual(14.7);
+  });
+
 });
