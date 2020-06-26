@@ -6,6 +6,6 @@ export class User {
   }
 
   findAgeMars() {
-    return this.ageInEarthDays / 687;
+    return Math.round((this.ageInEarthDays / 687) * 10) / 10;
   }
 };
