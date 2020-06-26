@@ -46,4 +46,6 @@ describe('user planet ages', () => {
   test('should correctly calculate remaining life expectancy of user on specific planet', () => {
     expect(appUser.howLongTilDeath(appUser.findAgeJupiter())).toEqual(77.7);
   });
+
+  
 });

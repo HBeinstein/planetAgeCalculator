@@ -1,3 +1,5 @@
+import { planetsDaysInYear } from './../src/main.js';
+
 export class User {
   constructor(name, dateOfBirth, ageInEarthDays) {
     this.name = name;
@@ -7,35 +9,39 @@ export class User {
   }
 
   findAgeMars() {
-    let marsAge = Math.round((this.ageInEarthDays / 687) * 10) / 10;
-    return marsAge;
+    return Math.round((this.ageInEarthDays / planetsDaysInYear.mars) * 10) / 10;
   }
 
   findAgeVenus() {
-    return Math.round((this.ageInEarthDays / 225) * 10) / 10;
+    return Math.round((this.ageInEarthDays / planetsDaysInYear.venus) * 10) / 10;
   }
 
   findAgeMercury() {
-    return Math.round((this.ageInEarthDays / 88) * 10) / 10;
+    return Math.round((this.ageInEarthDays / planetsDaysInYear.mercury) * 10) / 10;
   }
 
   findAgeJupiter() {
-    return Math.round((this.ageInEarthDays / 4333) * 10) / 10;
+    return Math.round((this.ageInEarthDays / planetsDaysInYear.jupiter) * 10) / 10;
   }
 
   findAgeSaturn() {
-    return Math.round((this.ageInEarthDays / 10759) * 10) / 10;
+    return Math.round((this.ageInEarthDays / planetsDaysInYear.saturn) * 10) / 10;
   }
 
   findAgeUranus() {
-    return Math.round((this.ageInEarthDays / 30687) * 10) / 10;
+    return Math.round((this.ageInEarthDays / planetsDaysInYear.uranus) * 10) / 10;
   }
 
   findAgeNeptune() {
-    return Math.round((this.ageInEarthDays / 60190) * 10) / 10;
+    return Math.round((this.ageInEarthDays / planetsDaysInYear.neptune) * 10) / 10;
   }
 
   howLongTilDeath(planetAge) {
     return this.lifeExpectancy - planetAge;
   }
+
+  howLongTilDeathPlanetYears(planetAge) {
+    return this.lifeExpectancy - planetAge;
+  }
 };
+
