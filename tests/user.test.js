@@ -10,7 +10,7 @@ describe('user planet ages', () => {
 
   test('should correctly instantiate new User object', () => {
     expect(appUser.name).toEqual('Hannah');
-    expect(appUser.dateOfBirth).toEqual([10, 21, 1992])
+    expect(appUser.dateOfBirth).toEqual([10, 21, 1992]);
     expect(appUser.ageInEarthDays).toEqual(10110);
   });
 
@@ -43,5 +43,7 @@ describe('user planet ages', () => {
     expect(appUser.findAgeNeptune()).toEqual(.2);
   });
 
-
+  test('should correctly calculate remaining life expectancy of user on specific planet', () => {
+    expect(appUser.howLongTilDeath(appUser.findAgeJupiter())).toEqual(77.7);
+  });
 });

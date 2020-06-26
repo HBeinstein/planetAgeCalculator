@@ -2,11 +2,13 @@ export class User {
   constructor(name, dateOfBirth, ageInEarthDays) {
     this.name = name;
     this.dateOfBirth = dateOfBirth;
-    this.ageInEarthDays = ageInEarthDays
+    this.ageInEarthDays = ageInEarthDays;
+    this.lifeExpectancy = 100;
   }
 
   findAgeMars() {
-    return Math.round((this.ageInEarthDays / 687) * 10) / 10;
+    let marsAge = Math.round((this.ageInEarthDays / 687) * 10) / 10;
+    return marsAge;
   }
 
   findAgeVenus() {
@@ -31,5 +33,9 @@ export class User {
 
   findAgeNeptune() {
     return Math.round((this.ageInEarthDays / 60190) * 10) / 10;
+  }
+
+  howLongTilDeath(planet) {
+    // return 80 - planet;
   }
 };
