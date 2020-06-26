@@ -3,7 +3,7 @@ export class User {
     this.name = name;
     this.dateOfBirth = dateOfBirth;
     this.ageInEarthDays = ageInEarthDays;
-    this.lifeExpectancy = 100;
+    this.lifeExpectancy = 80;
   }
 
   findAgeMars() {
@@ -35,7 +35,7 @@ export class User {
     return Math.round((this.ageInEarthDays / 60190) * 10) / 10;
   }
 
-  howLongTilDeath(planet) {
-    return 80 - planet;
+  howLongTilDeath(planetAge) {
+    return this.lifeExpectancy - planetAge;
   }
 };
