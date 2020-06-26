@@ -42,7 +42,7 @@ export class User {
   }
 
   howLongTilDeathPlanetYears(planet, ageOnPlanet) {
-   
+    return Math.round(((this.lifeExpectancyInDays / planetsDaysInYear[planet])  - ageOnPlanet) * 10) / 10;
   }
 };
 
