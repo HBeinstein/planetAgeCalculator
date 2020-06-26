@@ -23,4 +23,8 @@ describe('user planet ages', () => {
     expect(appUser.findAgeVenus()).toEqual(44.9);
   });
 
+  test('should correctly calculate age of user on Mercury', () => {
+    expect(appUser.findAgeMercury()).toEqual(114.9);
+  });
+
 });
