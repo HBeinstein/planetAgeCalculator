@@ -2,10 +2,16 @@
 import { User } from './../src/user.js';
 
 describe('user planet ages', () => {
+  let appUser;
+
+  beforeEach(() => {
+    appUser = new User('Hannah', [10, 21, 1992], 10,110);
+  });
 
   test('should correctly instantiate new User object', () => {
-    const appUser = new User('Hannah', '27');
     expect(appUser.name).toEqual('Hannah');
-    expect(appUser.age).toEqual('27');
-  })
+    expect(appUser.dateOfBirth).toEqual([10, 21, 1992])
+    expect(appUser.ageInEarthDays).toEqual(10,110);
+  });
+
 });

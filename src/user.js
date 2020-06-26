@@ -1,7 +1,8 @@
 export class User {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
+  constructor(name, dateOfBirth, ageInEarthDays) {
+    // this.name = name;
+    // this.dateOfBirth = dateOfBirth;
+    // this.ageInEarthDays = ageInEarthDays
   }
 
   checkAgeMars() {
