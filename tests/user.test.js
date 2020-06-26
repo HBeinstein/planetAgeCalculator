@@ -61,8 +61,12 @@ describe('user planet ages and lifespan info', () => {
     expect(olderAppUser.howLongTilDeathPlanetYears('jupiter', olderAppUser.findAgeJupiter())).toEqual(.9);
   });
 
-  test("should correctly concatenate user info using template literal to append to DOM", () => {
+  test("should correctly concatenate (<80 years old) user info using template literal to append to DOM", () => {
     expect(appUser.createWebpageInfo(appUser.name, 'jupiter', appUser.findAgeJupiter(), appUser.howLongTilDeathEarthYears(appUser.findAgeJupiter()))).toEqual("Hi Hannah, your age on jupiter is 2.3! You'll likely live 77.7 more years on this planet.");
+  });
+
+  test("should correctly concatenate (>=80 years old) user info using template literal to append to DOM", () => {
+    expect(olderAppUser.createWebpageInfo(olderAppUser.name, 'jupiter', olderAppUser.findAgeJupiter(), olderAppUser.howLongTilDeathPlanetYears('jupiter', olderAppUser.findAgeJupiter()))).toEqual("Hi Craig, your age on jupiter is 7.6! Congrats! You've already outlived the average lifespan on this planet by 0.9 years!");
   });
 
 });

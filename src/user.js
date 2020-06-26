@@ -58,12 +58,6 @@ export class User {
   }
 
   createWebpageInfo(name, planet, age, yearMeasurement) {
-    if (this.ageInEarthDays < 29200) {
-      return (`Hi ${name}, your age on ${planet} is ${age}! You'll likely live ${yearMeasurement} more years on this planet.`)
-    } else if (this.ageInEarthDays >= 29200) {
-      return (`Hi ${name}, your age on ${planet} is ${age}! Congrats! You've already outlived the average lifespan on this planet by ${yearMeasurement} years!`)
-    } else {
-      console.log('error!')
-    }
+
   };
 };
