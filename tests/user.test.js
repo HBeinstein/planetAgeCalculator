@@ -43,9 +43,12 @@ describe('user planet ages', () => {
     expect(appUser.findAgeNeptune()).toEqual(.2);
   });
 
-  test('should correctly calculate remaining life expectancy of user on specific planet', () => {
-    expect(appUser.howLongTilDeath(appUser.findAgeJupiter())).toEqual(77.7);
+  test('should correctly calculate remaining life expectancy of user on specific planet using earth years', () => {
+    expect(appUser.howLongTilDeathEarthYears(appUser.findAgeJupiter())).toEqual(77.7);
   });
 
-  
+  test("should correctly calculate remaining life expectancy of user on specific planet using that planet's years", () => {
+    expect(appUser.howLongTilDeathPlanetYears('jupiter', appUser.findAgeJupiter())).toEqual(4.4);
+  });
+
 });

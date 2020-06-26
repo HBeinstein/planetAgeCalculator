@@ -5,7 +5,8 @@ export class User {
     this.name = name;
     this.dateOfBirth = dateOfBirth;
     this.ageInEarthDays = ageInEarthDays;
-    this.lifeExpectancy = 80;
+    this.lifeExpectancyInYears = 80;
+    this.lifeExpectancyInDays = 29200;
   }
 
   findAgeMars() {
@@ -36,12 +37,12 @@ export class User {
     return Math.round((this.ageInEarthDays / planetsDaysInYear.neptune) * 10) / 10;
   }
 
-  howLongTilDeath(planetAge) {
-    return this.lifeExpectancy - planetAge;
+  howLongTilDeathEarthYears(ageOnPlanet) {
+    return this.lifeExpectancyInYears - ageOnPlanet;
   }
 
-  howLongTilDeathPlanetYears(planetAge) {
-    return this.lifeExpectancy - planetAge;
+  howLongTilDeathPlanetYears(planet, ageOnPlanet) {
+   
   }
 };
 
