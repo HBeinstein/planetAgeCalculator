@@ -35,4 +35,8 @@ describe('user planet ages', () => {
     expect(appUser.findAgeSaturn()).toEqual(.9);
   });
 
+  test('should correctly calculate age of user on Uranus', () => {
+    expect(appUser.findAgeUranus()).toEqual(.3);
+  });
+
 });

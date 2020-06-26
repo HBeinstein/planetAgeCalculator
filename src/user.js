@@ -24,4 +24,8 @@ export class User {
   findAgeSaturn() {
     return Math.round((this.ageInEarthDays / 10759) * 10) / 10;
   }
+
+  findAgeUranus() {
+
+  }
 };
